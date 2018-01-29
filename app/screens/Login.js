@@ -6,9 +6,7 @@ export default class Login extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={text.p}>Coffee Tracker</Text>
-        <Text>A coffee tracking app for the at-home barista.</Text>
-        <Text>Hi Megan and Gizmo</Text>
+        <Text style={text.p}>Login Screen</Text>
       </View>
     );
   }
@@ -17,7 +15,7 @@ export default class Login extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#a55',
     alignItems: 'center',
     justifyContent: 'center',
   },
