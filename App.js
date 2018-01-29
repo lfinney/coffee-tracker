@@ -1,16 +1,21 @@
 import React from 'react';
-import { Navigator } from 'react-native';
-import text from './app/styles/text';
+import { StyleSheet, Text, View } from 'react-native';
+import { StackNavigator } from 'react-navigation';
+import HomeScreen from './app/screens/HomeScreen'
+import LoginScreen from './app/screens/LoginScreen'
+import NewBrewScreen from './app/screens/NewBrewScreen'
+import BeansScreen from './app/screens/BeansScreen'
+
+const SimpleApp = StackNavigator({
+  Home: { screen: HomeScreen },
+  Login: { screen: LoginScreen },
+  NewBrew: { screen: NewBrewScreen },
+  Beans: { screen: BeansScreen },
+});
 
 export default class App extends React.Component {
   render() {
-    return (
-      <View style={styles.container}>
-        <Text style={text.p}>Coffee Tracker</Text>
-        <Text>A coffee tracking app for the at-home barista.</Text>
-        <Text>Hi Megan and Gizmo</Text>
-      </View>
-    );
+    return <SimpleApp />;
   }
 }
 
