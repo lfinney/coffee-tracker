@@ -7,10 +7,30 @@ import NewBrewScreen from './app/screens/NewBrewScreen'
 import BeansScreen from './app/screens/BeansScreen'
 
 const SimpleApp = StackNavigator({
-  Home: { screen: HomeScreen },
-  Login: { screen: LoginScreen },
-  NewBrew: { screen: NewBrewScreen },
-  Beans: { screen: BeansScreen },
+  Home: {
+    screen: HomeScreen,
+    navigationOptions: {
+      headerTitle: 'Home',
+    },
+  },
+  Login: { 
+    screen: LoginScreen,
+    navigationOptions: {
+      headerTitle: 'Login',
+    },
+  },
+  NewBrew: {
+    screen: NewBrewScreen,
+    navigationOptions: {
+      headerTitle: 'Brew',
+    },
+  },
+  Beans: {
+    screen: BeansScreen,
+    navigationOptions: {
+      headerTitle: 'Beans',
+    },
+  },
 });
 
 export default class App extends React.Component {

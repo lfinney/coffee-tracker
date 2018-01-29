@@ -4,11 +4,12 @@ import text from '../styles/text';
 
 export default class Home extends React.Component {
   render() {
+    const { navigation } = this.props
     return (
       <View style={styles.container}>
         <Text style={text.p}>Home Screen</Text>
         <Button
-          onPress={() => navigate('NewBrew')}
+          onPress={() => navigation.navigate('NewBrew')}
           title="New Brew"
         />
       </View>
