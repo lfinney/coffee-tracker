@@ -9,11 +9,13 @@ export default class Home extends React.Component {
     return (
       <View style={styles.container}>
         <Text style={text.title}>Home Screen</Text>
-        <Button
-          color="#bada55"
+        <TouchableOpacity
+          style={button.nav}
           onPress={() => navigation.navigate('NewBrew')}
-          title="New Brew"
-        />
+        >
+          <Text>Brew</Text>
+        </TouchableOpacity>
+
         <TouchableOpacity
           style={button.nav}
           onPress={() => navigation.navigate('Beans')}
